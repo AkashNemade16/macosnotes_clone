@@ -7,7 +7,7 @@ const AddNote = ({ text }) => {
                 maxRows={20}
                 aria-label="maximum height"
                 placeholder="Please Type your note"
-                defaultValue={text}
+                value={text}
                 style={{ width: '100%' }}
             />
         </div>

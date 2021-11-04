@@ -22,7 +22,7 @@ const NoteTitle = () => {
                 folderData.files.filter((i) => i.folderId === folderIdValue).map((i, j) => (
                     <ListItemButton selected={selectedIndex===fileIdValue} key={j} 
                     onClick = {(event)=> handleListItemClick(event,i.id)} >
-                        <ListItemText primary={i.content.title} />
+                        <ListItemText primary={i.fileName} />
                     </ListItemButton>
                 ))
             }

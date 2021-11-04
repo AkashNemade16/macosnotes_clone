@@ -36,7 +36,7 @@ export default function FolderList() {
         <List>
             {
                 folderData.folders.map((folder,index)=>(
-                    <ListItem key={index}>
+                    <ListItem sx={{paddingTop:0}} key={index}>
                         <ListItemButton
                             selected={selectedIndex === 0}
                             onClick={(event) => handleListItemClick(event, folder.id)}

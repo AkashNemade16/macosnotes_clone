@@ -25,18 +25,17 @@ const Home = () => {
                 <Box sx={{ flexGrow: 1}}>
                     <Header/>
                 <Grid container  >
-                    <Grid item xs={2}>
+                    <Grid item xs={2} sx={{border:1, height:'100vh'}}>
                         <FolderList />
                     </Grid>
-                    <Grid item xs={4}>
+                        <Grid item xs={4} sx={{ border: 1, height: '100vh' }}>
                         <NoteTitle />
                     </Grid>
-                    <Grid item xs = {6}>
+                        <Grid item xs={6} sx={{ border: 0.2, height: '100vh' }}>
                         <Content />    
                     </Grid>
                 </Grid>
           </Box>
-
             </idContext.Provider>
         </FolderContext.Provider >
 
