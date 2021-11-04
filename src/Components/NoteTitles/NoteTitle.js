@@ -1,4 +1,4 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import { FolderContext } from '../../reducers/reducer';
 import { idContext } from '../Home/Home';
 import { List, ListItem, ListItemButton, ListItemText } from '@mui/material';
@@ -7,8 +7,8 @@ const NoteTitle = () => {
     const folderData = context.folderState
     const { folderId, fileId, selectIndex } = useContext(idContext)
     const [folderIdValue] = folderId
-    const [fileIdValue,setFileIdValue] = fileId;
-    const [selectIndexValue,setSelectIndexValue] = selectIndex;
+    const [fileIdValue, setFileIdValue] = fileId;
+    const [selectIndexValue, setSelectIndexValue] = selectIndex;
     const [selectedIndex, setSelectedIndex] = React.useState();
     const handleListItemClick = (event, index) => {
         setFileIdValue(index);
@@ -17,11 +17,11 @@ const NoteTitle = () => {
     };
 
     return (
-        <List >
+        <List sx={{ paddingTop: 0 }} >
             {
                 folderData.files.filter((i) => i.folderId === folderIdValue).map((i, j) => (
-                    <ListItemButton selected={selectedIndex===fileIdValue} key={j} 
-                    onClick = {(event)=> handleListItemClick(event,i.id)} >
+                    <ListItemButton selected={selectedIndex === fileIdValue} key={j}
+                        onClick={(event) => handleListItemClick(event, i.id)} >
                         <ListItemText primary={i.fileName} />
                     </ListItemButton>
                 ))

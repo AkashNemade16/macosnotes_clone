@@ -33,7 +33,7 @@ export default function FolderList() {
     }, [])
 
     return (
-        <List>
+        <List >
             {
                 folderData.folders.map((folder,index)=>(
                     <ListItem sx={{paddingTop:0}} key={index}>

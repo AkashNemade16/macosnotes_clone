@@ -8,7 +8,7 @@ const AddNote = ({ text }) => {
                 aria-label="maximum height"
                 placeholder="Please Type your note"
                 value={text}
-                style={{ width: '100%' }}
+                style={{ width: '100%' , height:'100vh',padding:0 }}
             />
         </div>
     )
