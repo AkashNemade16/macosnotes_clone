@@ -5,6 +5,8 @@ import { FolderContext } from './../../reducers/reducer';
 import { uuid } from 'uuidv4';
 import { TextareaAutosize } from '@mui/material';
 import { idContext } from '../Home/Home'
+import { AppBar } from '@mui/material';
+
 const Header = () => {
     const context = useContext(FolderContext);
     const data = context.folderState
@@ -25,8 +27,10 @@ const Header = () => {
         }
         setValue(true)
         if (input) addFolders(context, folderStructure);
+        setInput("")
     }
 
+   
 
     const deleteHandler = () => {
         deleteFolder(context, folderIdValue)
@@ -37,7 +41,6 @@ const Header = () => {
             folderId: folderIdValue + "",
             fileName: "sky123",
             content: {
-                title: "",
                 note: ""
             },
             timeCreated: "",
@@ -88,7 +91,8 @@ const Header = () => {
             timeModified: "",
         }
         setFileValue(true);
-        addFiles(context, fileStructure)
+        if(fileInput)addFiles(context, fileStructure)
+        setFileInput("");
     }
 
     return (

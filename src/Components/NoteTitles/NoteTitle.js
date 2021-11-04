@@ -1,6 +1,7 @@
-import React, { useContext } from 'react'
+import React, { useContext,useEffect } from 'react'
 import { FolderContext } from '../../reducers/reducer';
 import { idContext } from '../Home/Home';
+import { fetchFiles } from '../../actions/fileActions';
 import { List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 const NoteTitle = () => {
     const context = React.useContext(FolderContext);
@@ -16,6 +17,10 @@ const NoteTitle = () => {
         setSelectIndexValue(index);
     };
 
+    useEffect(() => {
+        fetchFiles()
+    },[])
+    
     return (
         <List sx={{ paddingTop: 0 }} >
             {
