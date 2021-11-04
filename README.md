@@ -1,6 +1,6 @@
 step 1:
-#to start the json-server
-cd server-api
+to start the json-server\
+cd server-api\
 npm start
 
 step 2:
