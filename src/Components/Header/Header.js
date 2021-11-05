@@ -19,13 +19,16 @@ const Header = () => {
     const [folderIdValue] = folderId
     const [fileIdValue] = fileId;
 
+
+    const today = new data()
+    const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    const DateTime = date + ' ' + time
     //handle new Folder
     const newFolderHandler = () => {
         const folderStructure = {
             id: uuid(),
             folderName: input,
-            timeCreated: "",
-            timeModified: "",
         }
         setValue(true)
         if (input) addFolders(context, folderStructure);
@@ -102,10 +105,9 @@ const Header = () => {
             folderId: folderIdValue + "",
             fileName: fileInput,
             content: {
-                title: "",
                 note: ""
             },
-            timeCreated: "",
+            timeCreated: DateTime,
             timeModified: "",
         }
         setFileValue(true);
@@ -123,12 +125,11 @@ const Header = () => {
                     <button onClick={newFileHandler}>New File</button>
                     <button onClick={updateFileHandler}>update</button>
                 </Toolbar>
-            </AppBar>
-            
+            </AppBar> 
+
             {value === true ? <TextareaAutosize onChange={handleInputChange} onKeyPress={handleKeypress} /> : null}
             {filevalue === true ? <TextareaAutosize onChange={handleFileInputChange} onKeyPress={handleFileKeypress} /> : null}
             {updateValue === true ? <TextareaAutosize onChange={handleInputChange} onKeyPress={handleUpdateKeypress} /> : null}
-
         </div>
     )
     //To add Icons to buttons 

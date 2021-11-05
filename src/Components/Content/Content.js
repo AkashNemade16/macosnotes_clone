@@ -20,11 +20,10 @@ const Content = () => {
         <div>
             {
                 ContentData.files.filter((file) => file.id === selectIndexValue).map((file, j) => (
-                    < AddNote key={j} text={file.content.note} />
+                    < AddNote key={j} text={file.content.note} title={file.fileName} />
                 ))
 
             }
-
         </div>
         //onChange props to be passed to AddNote
         //Add update folder button with updateFile action to update and edit
