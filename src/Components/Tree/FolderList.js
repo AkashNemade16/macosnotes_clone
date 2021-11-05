@@ -6,7 +6,8 @@ import { fetchFolders } from '../../actions/folderActions';
 import { fetchFiles } from '../../actions/fileActions';
 import { idContext } from '../Home/Home';
 import { ListItemButton } from '@mui/material';
-
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
 export default function FolderList() {
     const context = React.useContext(FolderContext);
     const folderData = context.folderState
@@ -27,19 +28,30 @@ export default function FolderList() {
     }, [])//context as dependency
 
     return (
-        <List >
-            {
-                folderData.folders.map((folder, index) => (
-                    <ListItem sx={{ paddingTop: 0 }} key={index}>
-                        <ListItemButton
-                            selected={selectedIndex === 0}
-                            onClick={(event) => handleListItemClick(event, folder.id)}
-                        >
-                            {folder.folderName}
-                        </ListItemButton>
-                    </ListItem>
-                ))
-            }
-        </List>
+        <Box sx={{display:"flex",
+            flexDirection:"column",
+            alignItems:"stretch"
+            }}>
+            <List >
+                {
+                    folderData.folders.map((folder, index) => (
+                        <ListItem sx={{ paddingTop: 0 }} key={index}>
+                            <ListItemButton
+                                selected={selectedIndex === 0}
+                                onClick={(event) => handleListItemClick(event, folder.id)}
+                            >
+                                {folder.folderName}
+                            </ListItemButton>
+                        </ListItem>
+                    ))
+                }
+            </List>
+                
+                <Button  variant='secondary'>New Folder</Button>
+            
+            
+        </Box>
+        
+        
     );
 }

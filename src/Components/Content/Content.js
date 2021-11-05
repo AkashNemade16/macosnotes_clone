@@ -1,7 +1,6 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import { FolderContext } from '../../reducers/reducer';
-import { Typography,TextField } from '@mui/material';
-import {idContext} from '../Home/Home'
+import { idContext } from '../Home/Home'
 import { updateFiles } from '../../actions/fileActions';
 import AddNote from './AddNote';
 const Content = () => {
@@ -9,7 +8,7 @@ const Content = () => {
     const ContentData = FolderData.folderState
     console.log(ContentData.files)
     const { selectIndex, folderIdValue } = useContext(idContext)
-    const [selectIndexValue,setSelectIndexValue] = selectIndex
+    const [selectIndexValue, setSelectIndexValue] = selectIndex
     console.log(selectIndexValue)
     const update = () => {
         updateFiles()
@@ -19,14 +18,16 @@ const Content = () => {
     console.log(ContentData.files.filter((file) => file.id === selectIndexValue))
     return (
         <div>
-           {
-             ContentData.files.filter((file)=>file.id===selectIndexValue).map((file,j)=>(
-                 < AddNote key={j} text={file.content.note}/>  
-             ))
-                 
-           }
-            
+            {
+                ContentData.files.filter((file) => file.id === selectIndexValue).map((file, j) => (
+                    < AddNote key={j} text={file.content.note} />
+                ))
+
+            }
+
         </div>
+        //onChange props to be passed to AddNote
+        //Add update folder button with updateFile action to update and edit
     )
 }
 

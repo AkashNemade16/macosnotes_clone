@@ -47,7 +47,7 @@ const Header = () => {
                 note: ""
             },
             timeCreated: "",
-            timeModified: "",
+            timeModified: "",//to add time using new Date()
         }
         setUpdateValue(true)
         if(input)updateFiles(context, fileStructure)
@@ -131,6 +131,7 @@ const Header = () => {
 
         </div>
     )
+    //To add Icons to buttons 
 }
 
 
