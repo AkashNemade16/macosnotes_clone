@@ -22,20 +22,22 @@ const Home = () => {
         }}>
             <idContext.Provider value={{ folderId: [folderId, setFolderId], fileId: [fileId, setFileId], selectIndex: [selectIndex, setSelectIndex] }}>
             
-              
-                    <Header/>
-                <Grid container  >
-                    <Grid item xs={2} sx={{border:0.2, height:'100vh'}}>
-                        <FolderList />
+              <Box sx={{flexGrow:1}}>
+                    <Header />
+                    <Grid container  >
+                        <Grid item xs={2} sx={{ border: 0.2, height: '100vh',borderColor:'lightgray' }}>
+                            <FolderList />
+                        </Grid>
+                        <Grid item xs={4} sx={{ border: 1, height: '100vh', borderColor: 'lightgray'  }}>
+                            <NoteTitle />
+                        </Grid>
+                        <Grid item xs={6} sx={{ border: 0.2, height: '100vh', borderColor: 'lightgray'  }} >
+                            <Content />
+                        </Grid>
                     </Grid>
-                    <Grid item xs={4} sx={{border:1, height: '100vh' }}>
-                        <NoteTitle />
-                    </Grid>
-                    <Grid item xs={6} sx={{ border:0.2, height: '100vh' }} >
-                        <Content />    
-                    </Grid>
-                </Grid>
 
+              </Box>
+                    
             </idContext.Provider>
         </FolderContext.Provider >
 

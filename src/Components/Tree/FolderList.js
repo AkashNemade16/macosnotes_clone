@@ -1,12 +1,6 @@
 import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Avatar from '@mui/material/Avatar';
-import ImageIcon from '@mui/icons-material/Image';
-import WorkIcon from '@mui/icons-material/Work';
-import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import { FolderContext } from '../../reducers/reducer';
 import { fetchFolders } from '../../actions/folderActions';
 import { fetchFiles } from '../../actions/fileActions';
@@ -30,13 +24,13 @@ export default function FolderList() {
     React.useEffect(() => {
         fetchFolders(context)
         fetchFiles(context)
-    }, [])
+    }, [])//context as dependency
 
     return (
         <List >
             {
-                folderData.folders.map((folder,index)=>(
-                    <ListItem sx={{paddingTop:0}} key={index}>
+                folderData.folders.map((folder, index) => (
+                    <ListItem sx={{ paddingTop: 0 }} key={index}>
                         <ListItemButton
                             selected={selectedIndex === 0}
                             onClick={(event) => handleListItemClick(event, folder.id)}

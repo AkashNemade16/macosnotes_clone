@@ -2,7 +2,8 @@ import React, { useContext,useEffect } from 'react'
 import { FolderContext } from '../../reducers/reducer';
 import { idContext } from '../Home/Home';
 import { fetchFiles } from '../../actions/fileActions';
-import { List, ListItem, ListItemButton, ListItemText } from '@mui/material';
+import { List,ListItemButton, ListItemText } from '@mui/material';
+
 const NoteTitle = () => {
     const context = React.useContext(FolderContext);
     const folderData = context.folderState
@@ -18,7 +19,8 @@ const NoteTitle = () => {
     };
 
     useEffect(() => {
-        fetchFiles()
+      
+        fetchFiles(context)
     },[])
     
     return (

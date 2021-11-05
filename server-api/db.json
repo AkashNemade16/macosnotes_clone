@@ -17,20 +17,21 @@
       "folderName": "Workout",
       "timeCreated": "",
       "timeModified": ""
-    }
-  ],
-  "files": [
+    },
     {
-      "id": "a9368f8b-8cec-4a87-a007-71ca79bbbec8",
-      "folderId": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
-      "fileName": "Shoulders",
-      "content": {
-        "title": "",
-        "note": ""
-      },
+      "id": "56f85588-009b-4830-b58d-ce41ac5d34f2",
+      "folderName": "Music",
       "timeCreated": "",
       "timeModified": ""
     },
+    {
+      "id": "1d3f7043-aa6b-4560-b181-20ccd9981158",
+      "folderName": "Coding",
+      "timeCreated": "",
+      "timeModified": ""
+    }
+  ],
+  "files": [
     {
       "id": "a8686577-5207-481d-bea3-830b578e9461",
       "folderId": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
@@ -59,6 +60,38 @@
       "fileName": "Arms",
       "content": {
         "title": "",
+        "note": ""
+      },
+      "timeCreated": "",
+      "timeModified": ""
+    },
+    {
+      "id": "8b5b27df-eec3-43e2-9c76-120698ab2d65",
+      "folderId": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
+      "fileName": "Traps",
+      "content": {
+        "title": "",
+        "note": ""
+      },
+      "timeCreated": "",
+      "timeModified": ""
+    },
+    {
+      "id": "1be6174a-8f2e-4766-9ef4-a60d47dd1d74",
+      "folderId": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
+      "fileName": "calves",
+      "content": {
+        "title": "",
+        "note": ""
+      },
+      "timeCreated": "",
+      "timeModified": ""
+    },
+    {
+      "id": "f9f64317-55b8-4b63-9b02-f6aa69fdec9a",
+      "folderId": "eef7ce7b-b5bb-400d-b103-e243cbd40393",
+      "fileName": "Skipping",
+      "content": {
         "note": ""
       },
       "timeCreated": "",
