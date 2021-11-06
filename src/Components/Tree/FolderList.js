@@ -28,10 +28,11 @@ export default function FolderList() {
     }, [])//context as dependency
 
     return (
-        <Box sx={{display:"flex",
-            flexDirection:"column",
-            alignItems:"stretch"
-            }}>
+        <Box sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "stretch"
+        }}>
             <List >
                 {
                     folderData.folders.map((folder, index) => (
@@ -46,12 +47,12 @@ export default function FolderList() {
                     ))
                 }
             </List>
-                
-                <Button  variant='secondary'>New Folder</Button>
-            
-            
+
+            <Button variant='secondary'>New Folder</Button>
+
+
         </Box>
-        
-        
+
+
     );
 }

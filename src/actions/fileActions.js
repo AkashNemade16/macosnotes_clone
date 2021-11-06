@@ -36,3 +36,12 @@ export const updateFiles = (context, files) => {
         }
     ).catch(e => console.log(e))
 }
+
+export const addNote = (context,files) => {
+    axios.put(`${baseURL}/files/${files.id}`, files).then(
+        res => {
+            console.log(res)
+            context.dispatch({ type: 'ADD_NOTES', payload: res.data })
+        }
+    ).catch(e => console.log(e))
+}

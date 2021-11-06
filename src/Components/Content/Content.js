@@ -5,8 +5,7 @@ import { updateFiles } from '../../actions/fileActions';
 import AddNote from './AddNote';
 const Content = () => {
     const FolderData = useContext(FolderContext);
-    const ContentData = FolderData.folderState
-    console.log(ContentData.files)
+    const ContentData = FolderData.folderState;
     const { selectIndex, folderIdValue } = useContext(idContext)
     const [selectIndexValue, setSelectIndexValue] = selectIndex
     console.log(selectIndexValue)

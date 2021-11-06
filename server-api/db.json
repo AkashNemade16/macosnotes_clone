@@ -2,33 +2,19 @@
   "folders": [
     {
       "id": "6c5e4516-ac3c-404a-98b7-b05adf61f5bf",
-      "folderName": "Notes",
-      "timeCreated": "",
-      "timeModified": ""
-    },
-    {
-      "id": "eef7ce7b-b5bb-400d-b103-e243cbd40393",
-      "folderName": "Exercise",
-      "timeCreated": "",
-      "timeModified": ""
+      "folderName": "Notes"
     },
     {
       "id": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
-      "folderName": "Workout",
-      "timeCreated": "",
-      "timeModified": ""
+      "folderName": "Workout"
     },
     {
       "id": "56f85588-009b-4830-b58d-ce41ac5d34f2",
-      "folderName": "Music",
-      "timeCreated": "",
-      "timeModified": ""
+      "folderName": "Music"
     },
     {
       "id": "1d3f7043-aa6b-4560-b181-20ccd9981158",
-      "folderName": "Coding",
-      "timeCreated": "",
-      "timeModified": ""
+      "folderName": "Coding"
     }
   ],
   "files": [
@@ -37,7 +23,6 @@
       "folderId": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
       "fileName": "Back",
       "content": {
-        "title": "",
         "note": ""
       },
       "timeCreated": "",
@@ -48,7 +33,6 @@
       "folderId": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
       "fileName": "legs",
       "content": {
-        "title": "",
         "note": ""
       },
       "timeCreated": "",
@@ -59,7 +43,6 @@
       "folderId": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
       "fileName": "Arms",
       "content": {
-        "title": "",
         "note": ""
       },
       "timeCreated": "",
@@ -70,7 +53,6 @@
       "folderId": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
       "fileName": "Traps",
       "content": {
-        "title": "",
         "note": ""
       },
       "timeCreated": "",
@@ -81,20 +63,19 @@
       "folderId": "a1964a19-fa2d-4cba-a291-e859e33b8c29",
       "fileName": "calves",
       "content": {
-        "title": "",
         "note": ""
       },
       "timeCreated": "",
       "timeModified": ""
     },
     {
-      "id": "f9f64317-55b8-4b63-9b02-f6aa69fdec9a",
-      "folderId": "eef7ce7b-b5bb-400d-b103-e243cbd40393",
-      "fileName": "Skip",
+      "id": "e4a2bf95-d3a9-4cda-a50e-f7779548e6ae",
+      "folderId": "56f85588-009b-4830-b58d-ce41ac5d34f2",
+      "fileName": "Taylor Swift",
       "content": {
         "note": ""
       },
-      "timeCreated": "",
+      "timeCreated": "2021-11-5 11:37:59",
       "timeModified": ""
     }
   ]

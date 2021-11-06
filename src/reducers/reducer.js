@@ -39,7 +39,12 @@ const Reducer = (state = initialState, action) => {
             return {
                 ...state,
                 files: [...state.files.map((x) => x.fileId === action.payload.filesId ? action.payload : x)]
-            }    
+            } 
+        case 'ADD_NOTES':
+            return {
+                ...state,
+                files: [...state.files.map((x) => x.fileId === action.payload.filesId ? action.payload : x)]
+            }   
         case 'UPDATE_FOLDER':
             return {
                 ...state,
